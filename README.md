@@ -1,4 +1,4 @@
-# Deno Base Image
+# [Deno](https://deno.land/) Base Image
 
 This sets up a build chain for a default [Deno](https://deno.land/) base container
 
@@ -16,4 +16,4 @@ This sets up a build chain for a default [Deno](https://deno.land/) base contain
 
 ```make shell``` : access bash shell in container
 
-```make test``` : run Deno tests
+```make test``` : run [Deno](https://deno.land/) tests

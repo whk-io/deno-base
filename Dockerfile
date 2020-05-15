@@ -16,12 +16,12 @@ RUN apt-get -qq update \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN useradd --uid 1993 --user-group deno \
- && mkdir /deno-dir/ \
- && chown deno:deno /deno-dir/
+ && mkdir /deno-app/ \
+ && chown deno:deno /deno-app/
 
-ENV DENO_DIR /deno-dir/
-COPY hello.ts /deno-dir/
-WORKDIR /deno-dir/
+ENV DENO_DIR /deno-app/
+COPY hello.ts /deno-app/
+WORKDIR /deno-app/
 
 ENTRYPOINT ["deno"]
 CMD ["run", "--allow-net", "hello.ts"]

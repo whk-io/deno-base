@@ -1,6 +1,6 @@
 # Deno Base Image
 
-This sets up a build chain for a default Deno base container
+This sets up a build chain for a default [Deno](https://deno.land/) base container
 
 ## Requirements
 
